@@ -75,7 +75,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: ServiceNow DevOps Unit Test Results
-        uses: ServiceNow/servicenow-devops-test-report@main
+        uses: ServiceNow/servicenow-devops-test-report@6.0.0
         with:
           # Devops Integration Token
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
@@ -255,7 +255,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:     
       - name: ServiceNow DevOps Change Attributes
-        uses: ServiceNow/servicenow-devops-change@v5.1.0
+        uses: ServiceNow/servicenow-devops-change@v6.0.0
         with:
           devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}

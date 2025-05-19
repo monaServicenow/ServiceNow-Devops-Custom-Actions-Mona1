@@ -252,7 +252,7 @@ jobs:
   change:
     name: Change Request
     # if: always()
-    needs: build
+    needs: ServiceNowSecurityScanResults
     runs-on: ubuntu-latest
     steps:     
       - name: ServiceNow DevOps Change Attributes

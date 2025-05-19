@@ -16,7 +16,7 @@ on:
 #RC1
 
 jobs: 
-  # jFrog:
+  # jFrog: 
   #  runs-on: ubuntu-latest
 
   #  steps:
